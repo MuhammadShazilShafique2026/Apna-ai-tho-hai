@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b1d">
+  <title>Apna AI 2.0</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        
+        <div class="brand-logo">✦</div>
+        <div>
+          <h2>Apna AI</h2>
+          <span>Version 2.0</span>
+        </div>
+        <button class="icon-btn close-sidebar" id="closeSidebar"
+          aria-label="Close sidebar">✕</button>
+      </div>
+
+      <button class="new-chat-btn" id="newChat">
+        <span>＋</span> New Chat
+      </button>
+
+      <div class="sidebar-section">
+        <p class="section-label">YOUR ASSISTANT</p>
+        <div class="feature-item active">
+          <span>✦</span> AI Chat
+          <span class="online-dot"></span>
+        </div>
+        <div class="feature-item">
+          <span>🎙</span> Voice Assistant
+        </div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="profile-avatar">S</div>
+        <div class="profile-info">
+          <strong>My Apna AI</strong>
+          <span>Personal Assistant</span>
+        </div>
+        <span class="status-dot"></span>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn"
+          aria-label="Open menu">☰</button>
+
+        <div class="topbar-title">
+          <span class="topbar-icon">✦</span>
+          <div>
+            <h3>Apna AI</h3>
+            <span><i class="online-dot"></i> Ready to help</span>
+          </div>
+        </div>
+
+        <button class="voice-toggle" id="voiceToggle" aria-pressed="false">
+          <span>🔊</span> <span id="voiceToggleText">Voice Off</span>
+        </button>
+      </header>
+
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="welcome-orb">
+            <div class="orb-ring ring-one"></div>
+            <div class="orb-ring ring-two"></div>
+            <div class="orb-core">✦</div>
+          </div>
+
+          <p class="eyebrow">YOUR PERSONAL AI ASSISTANT</p>
+          <h1>Hey there, <span>Shazil!</span></h1>
+          <h2>How can I help you today?</h2>
+          <p class="welcome-description">
+            Ask me anything. Let's learn, create and explore together.
+          </p>
+
+          <div class="suggestions">
+            <button class="suggestion-card"
+              data-prompt="Teach me something interesting today">
+              <span class="suggestion-icon purple">✧</span>
+              <strong>Learn something</strong>
+              <small>Discover a new topic</small>
+            </button>
+
+            <button class="suggestion-card"
+              data-prompt="Help me write JavaScript code">
+              <span class="suggestion-icon blue">&lt;/&gt;</span>
+              <strong>Write code</strong>
+              <small>Build a cool project</small>
+            </button>
+
+            <button class="suggestion-card"
+              data-prompt="Give me creative ideas for my next project">
+              <span class="suggestion-icon pink">✳</span>
+              <strong>Get creative</strong>
+              <small>Explore new ideas</small>
+            </button>
+
+            <button class="suggestion-card"
+              data-prompt="Help me improve my English">
+              <span class="suggestion-icon cyan">文</span>
+              <strong>Practice English</strong>
+              <small>Improve your skills</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+
+      <footer class="composer-area">
+        <form class="composer" id="chatForm">
+          <textarea
+            id="messageInput"
+            rows="1"
+            placeholder="Message Apna AI..."
+            aria-label="Write your message"
+            required></textarea>
+
+          <div class="composer-actions">
+            <div class="composer-hint">
+              <span class="sparkle">✦</span>
+              <span id="inputHint">Ask anything, in any language</span>
+            </div>
+
+            <div class="action-buttons">
+              <button type="button" class="icon-btn mic-btn"
+                id="micBtn" aria-label="Start voice input"
+                title="Speak your message">🎙</button>
+
+              <button type="submit" class="send-btn" id="sendBtn"
+                aria-label="Send message" title="Send message">
+                ↑
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <p class="disclaimer">
+          Apna AI can make mistakes. Check important information.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+
+/* =========================================
+   APNA AI 2.0 — RESPONSIVE DESIGN
+========================================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 235px;
+    min-width: 235px;
+  }
+
+  .topbar {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .chat-area {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .welcome-orb {
+    width: 100px;
+    height: 100px;
+  }
+
+  .orb-core {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+/* Tablets and mobile screens */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 280px;
+    min-width: 0;
+    height: 100dvh;
+    transform: translateX(-105%);
+    transition: transform 0.3s ease;
+    box-shadow: none;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+    box-shadow: 15px 0 60px rgba(0, 0, 0, 0.4);
+  }
+
+  .close-sidebar {
+    display: grid;
+    margin-left: auto;
+  }
+
+  .menu-btn {
+    display: grid;
+    margin-right: 12px;
+  }
+
+  .topbar {
+    min-height: 68px;
+    padding: 12px 16px;
+  }
+
+  .topbar-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .chat-area {
+    padding: 27px 17px 20px;
+  }
+
+  .welcome {
+    margin-top: 8px;
+  }
+
+  .welcome-orb {
+    margin-bottom: 22px;
+  }
+
+  .welcome h1 {
+    font-size: clamp(26px, 5vw, 35px);
+  }
+
+  .welcome-description {
+    max-width: 350px;
+    font-size: 12px;
+  }
+
+  .suggestions {
+    max-width: 560px;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .suggestion-card {
+    padding: 13px;
+  }
+
+  .composer-area {
+    padding: 8px 15px 12px;
+  }
+
+  .composer {
+    border-radius: 16px;
+  }
+
+  .message-content {
+    font-size: 13px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .topbar {
+    min-height: 62px;
+    padding: 10px 11px;
+  }
+
+  .menu-btn {
+    width: 34px;
+    height: 34px;
+    margin-right: 9px;
+  }
+
+  .topbar-title {
+    gap: 8px;
+  }
+
+  .topbar-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  .topbar-title h3 {
+    font-size: 12px;
+  }
+
+  .topbar-title > div > span {
+    font-size: 9px;
+  }
+
+  .voice-toggle {
+    gap: 5px;
+    padding: 8px 9px;
+    border-radius: 9px;
+    font-size: 10px;
+  }
+
+  .chat-area {
+    padding: 23px 12px 16px;
+  }
+
+  .welcome-orb {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 20px;
+  }
+
+  .ring-two {
+    inset: 7px;
+  }
+
+  .orb-core {
+    width: 55px;
+    height: 55px;
+    border-radius: 18px;
+    font-size: 29px;
+  }
+
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.7px;
+    margin-bottom: 13px;
+  }
+
+  .welcome h1 {
+    font-size: 27px;
+    letter-spacing: -0.8px;
+  }
+
+  .welcome h2 {
+    font-size: 17px;
+  }
+
+  .welcome-description {
+    max-width: 310px;
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .suggestions {
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .suggestion-card {
+    grid-template-columns: 31px minmax(0, 1fr);
+    column-gap: 8px;
+    padding: 11px 9px;
+    border-radius: 12px;
+  }
+
+  .suggestion-icon {
+    width: 31px;
+    height: 31px;
+    border-radius: 9px;
+    font-size: 15px;
+  }
+
+  .suggestion-card strong {
+    font-size: 10px;
+  }
+
+  .suggestion-card small {
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+  .composer-area {
+    padding: 7px 9px 10px;
+  }
+
+  .composer {
+    padding: 10px 10px 8px 13px;
+    border-radius: 15px;
+  }
+
+  #messageInput {
+    min-height: 34px;
+    font-size: 13px;
+  }
+
+  .composer-hint {
+    gap: 4px;
+    font-size: 9px;
+  }
+
+  .action-buttons {
+    gap: 6px;
+  }
+
+  .mic-btn,
+  .icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .send-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  .disclaimer {
+    margin-top: 8px;
+    font-size: 9px;
+  }
+
+  .messages {
+    gap: 18px;
+  }
+
+  .message {
+    gap: 8px;
+  }
+
+  .message-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .message-content {
+    max-width: 88%;
+    font-size: 12px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 350px) {
+  .voice-toggle {
+    padding: 7px;
+  }
+
+  .topbar-title {
+    gap: 6px;
+  }
+
+  .topbar-icon {
+    display: none;
+  }
+
+  .welcome h1 {
+    font-size: 23px;
+  }
+
+  .suggestion-card {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .suggestion-icon {
+    grid-row: auto;
+  }
+
+  .suggestion-card small {
+    margin-top: 0;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
